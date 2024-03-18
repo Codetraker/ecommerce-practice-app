@@ -1,0 +1,11 @@
+.navbar{
+    background-color: black;
+    color: white;
+    height: 6vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#home{
+    grid-column: 2;
+    background-color: aqua;
+}

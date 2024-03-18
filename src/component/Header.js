@@ -1,27 +1,29 @@
 import React from 'react';
-import { Button, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
+// import { Button, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
+import './Header.css';
 
 const Header = props => {
     return (
         <>
-            <Navbar bg='dark' data-bs-theme='dark'>
+            {/* <Navbar bg='dark' data-bs-theme='dark'>
                 <Container>
-                    {/* <Navbar.Brand>The Generics</Navbar.Brand> */}
                     <Row>
-                        <Col>
+                        <Col id='home'>
                             <Nav>
                                 <Nav.Link>Home</Nav.Link>
                                 <Nav.Link>Store</Nav.Link>
                                 <Nav.Link>About</Nav.Link>
+                                <Button>Cart</Button>
                             </Nav>
-                        </Col>
-                        <Col>
-                            <Button>Cart</Button>
-                            <span style={{color:'white'}}>0</span>
                         </Col>
                     </Row>
                 </Container>               
-            </Navbar>
+            </Navbar> */}
+            <div className='navbar'>
+                <div id='home'>Home</div>
+                <div id='store'>Store</div>
+                <div id='about'>About</div>
+            </div>
         </>
     );
 }
